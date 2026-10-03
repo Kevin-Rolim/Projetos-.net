@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="ei7oK6976gzA-94wLuGa">
+    <mxGraphModel dx="912" dy="479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z7AtX2gnXirasedwu7_B-11" edge="1" parent="1" source="z7AtX2gnXirasedwu7_B-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="z7AtX2gnXirasedwu7_B-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-12" connectable="0" parent="z7AtX2gnXirasedwu7_B-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP" vertex="1">
+          <mxGeometry relative="1" x="-0.1793" y="3" as="geometry">
+            <mxPoint x="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Browser&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Html/Css/JS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-9" edge="1" parent="1" source="z7AtX2gnXirasedwu7_B-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="z7AtX2gnXirasedwu7_B-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-10" connectable="0" parent="z7AtX2gnXirasedwu7_B-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="EF Core" vertex="1">
+          <mxGeometry relative="1" x="-0.1236" y="-1" as="geometry">
+            <mxPoint x="25" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ASP.NET Core MVC&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Controllers -&amp;gt; ViewModels&lt;/div&gt;&lt;div&gt;-&amp;gt; Razor Views&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="180" x="300" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-6" edge="1" parent="1" source="z7AtX2gnXirasedwu7_B-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="z7AtX2gnXirasedwu7_B-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;Controllers&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="335" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-7" edge="1" parent="1" source="z7AtX2gnXirasedwu7_B-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="z7AtX2gnXirasedwu7_B-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;Services&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="335" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;DbContext&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="335" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="z7AtX2gnXirasedwu7_B-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;SQL Server&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="335" y="530" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

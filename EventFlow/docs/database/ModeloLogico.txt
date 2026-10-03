@@ -1,0 +1,3 @@
+Eventos (_Id_,titulo,descricao,datahora,situacao,local,capacidade_maxima)
+Participantes(_Id_,nome,email,telefone)
+Inscricoes (_id_eventos_,_id_participantes_,data_inscricao,situacao)

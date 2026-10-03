@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="01FCf8j5yxU92_nk0ea6">
+    <mxGraphModel dx="919" dy="486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="300" width="250" x="150" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="EventFlow" vertex="1">
+          <mxGeometry height="30" width="60" x="245" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-4" parent="1" style="html=1;whiteSpace=wrap;" value="Cadastrar evento" vertex="1">
+          <mxGeometry height="20" width="100" x="170" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-5" parent="1" style="html=1;whiteSpace=wrap;" value="Editar Evento" vertex="1">
+          <mxGeometry height="20" width="100" x="170" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-6" parent="1" style="html=1;whiteSpace=wrap;" value="Consultar Evento" vertex="1">
+          <mxGeometry height="20" width="100" x="280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-7" parent="1" style="html=1;whiteSpace=wrap;" value="Listar Eventos" vertex="1">
+          <mxGeometry height="20" width="100" x="280" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-8" parent="1" style="html=1;whiteSpace=wrap;" value="Cadastrar Participante" vertex="1">
+          <mxGeometry height="20" width="135" x="170" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-9" parent="1" style="html=1;whiteSpace=wrap;" value="Cancelar Evento" vertex="1">
+          <mxGeometry height="20" width="100" x="170" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-10" parent="1" style="html=1;whiteSpace=wrap;" value="Encerrar Evento" vertex="1">
+          <mxGeometry height="20" width="100" x="280" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-11" parent="1" style="html=1;whiteSpace=wrap;" value="Abrir Inscrições" vertex="1">
+          <mxGeometry height="20" width="100" x="170" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-13" parent="1" style="html=1;whiteSpace=wrap;" value="Consultar Participante" vertex="1">
+          <mxGeometry height="20" width="135" x="170" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-14" parent="1" style="html=1;whiteSpace=wrap;" value="Registrar Participante" vertex="1">
+          <mxGeometry height="20" width="135" x="170" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-15" parent="1" style="html=1;whiteSpace=wrap;" value="Cancelar Participante" vertex="1">
+          <mxGeometry height="20" width="135" x="170" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="MbSAIL0ZbA7YzpvLXOwr-18" edge="1" parent="1" source="MbSAIL0ZbA7YzpvLXOwr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="MbSAIL0ZbA7YzpvLXOwr-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

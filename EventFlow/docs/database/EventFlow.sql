@@ -5,7 +5,7 @@ create database EventFlow
 use EventFlow
 
 --Modelo Lógico
---Eventos (_Id_,titulo,descricao,datahora,situacao,local,capacidade_maxima)
+--Eventos (_Id_,titulo,descricao,datahora,situacao,local,capacidadeMaxima)
 --Participantes(_Id_,nome,email,telefone)
 --Inscricoes (_id_eventos_,_id_participantes_,data_inscricao,situacao)
 
@@ -16,11 +16,11 @@ create TABLE Eventos
 	descricao			varchar(100)		null,
 	datahora			datetime2(0)		not null,
 	situacao			int 				not null,
-	local				varchar(50)			not null,
-	capacidade_maxima	int					not null,
+	local				varchar(100)			not null,
+	capacidadeMaxima	int					not null,
 	
 	constraint CK_Eventos_Situacao 			check (situacao in (1, 2, 3, 4)),
-	constraint CK_Eventos_Capacidade 		check (capacidade_maxima > 0)
+	constraint CK_Eventos_Capacidade 		check (capacidadeMaxima > 0)
 )
 
 create TABLE Participantes

@@ -1,0 +1,16 @@
+@model List<Evento>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Eventos</h1>
+    @foreach (var evento in Model)
+        {
+            <p>@evento.Titulo</p>
+        }
+    </body>
+</html>

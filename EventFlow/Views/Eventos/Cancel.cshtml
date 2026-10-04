@@ -1,0 +1,19 @@
+@model EventoCancelViewModel
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <h2>Tem certeza que deseja cancelar esse evento?</h2>
+        <input type="hidden" asp-for="Id">
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

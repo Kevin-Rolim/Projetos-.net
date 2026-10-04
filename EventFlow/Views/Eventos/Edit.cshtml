@@ -1,0 +1,36 @@
+@model EventoEditViewModel
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <input type="hidden" asp-for="Id">
+        <label>Novo título do evento:</label>
+        <input type="text" asp-for="Titulo" placeholder="Insira o Titulo do evento" maxlength="50" >
+        <span asp-validation-for="Titulo"></span>
+        <br>
+        <label>Nova descrição do evento:</label>
+        <input type="text" asp-for="Descricao" placeholder="Insira a descrição do evento" maxlength="100" >
+        <span asp-validation-for="Descricao"></span>
+        <br>
+        <label>Nova data do evento:</label>
+        <input type="datetime-local" asp-for="DataHora" placeholder="Insira a data do evento" >
+        <span asp-validation-for="DataHora"></span>
+        <br>
+        <label>Novo local do evento:</label>
+        <input type="text" asp-for="Local" placeholder="Insira o local do evento" maxlength="100" >
+        <span asp-validation-for="Local"></span>
+        <br>
+        <label>Nova capacidade máxima:</label>
+        <input type="number" asp-for="CapacidadeMaxima" placeholder="Insira a capacidade maxima do evento" max="999999" >
+        <span asp-validation-for="CapacidadeMaxima"></span>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

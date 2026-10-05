@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Mvc;
 
 public class EventosController : Controller
@@ -41,7 +42,6 @@ public class EventosController : Controller
             DataHora = model.DataHora,
             Local = model.Local,
             CapacidadeMaxima = model.CapacidadeMaxima
-
         };
         try
         {
@@ -78,6 +78,7 @@ public class EventosController : Controller
         return View (model);
     }
     [HttpPost]
+    [RequireAntiforgeryToken]
     public async Task<IActionResult> Edit(int Id,EventoEditViewModel model)
     {
     if (!ModelState.IsValid)
@@ -107,9 +108,9 @@ public class EventosController : Controller
                 ex.Message
             );
         return View(model);
+        }
+    }
 
-    }
-    }
     [HttpGet]
     public async Task<IActionResult> Cancel(int Id)
     {
@@ -125,6 +126,7 @@ public class EventosController : Controller
         return View(model);
     }
     [HttpPost]
+    [RequireAntiforgeryToken]
     public async Task<IActionResult> Cancel(int Id,EventoCancelViewModel model)
     {
         if (!ModelState.IsValid)

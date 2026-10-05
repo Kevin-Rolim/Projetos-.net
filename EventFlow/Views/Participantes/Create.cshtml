@@ -1,0 +1,27 @@
+@model ParticipanteCreateViewModel
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" >
+        <label>Nome do participante:</label>
+        <input type="text" asp-for="Nome" placeholder="Insira o nome do participante" maxlength="100"  minlength="3" required>
+        <span asp-validation-for="Nome"></span>
+        <br>
+        <label>Email do participante:</label>
+        <input type="email" asp-for="Email" placeholder="Insira email do participante" maxlength="100" minlength="3"required>
+        <span asp-validation-for="Email"></span>
+        <br>
+        <label>Telefone do participante:</label>
+        <input type="tel" asp-for="Telefone" placeholder="Insira o telefone do participante" maxlength="50" required>
+        <span asp-validation-for="Telefone"></span>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

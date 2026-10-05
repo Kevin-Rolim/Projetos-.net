@@ -1,58 +1,60 @@
 using System.Text.RegularExpressions;
 
 public class ValidarModels
-{ 
-    public static readonly Regex RegexCaracteresRepetidos = 
-        new Regex(@"([\p{L}\s])\1{2,}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+{
+    private static readonly Regex RegexCaracteresRepetidos =
+        new Regex(@"([\p{L}\s])\1{5,}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-    public static readonly Regex RegexMuitasConsoantes = 
-        new Regex(@"[^aeiouáéíóúâêîôûãõàèìòùüç\s'’-]{5,}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+    private static readonly Regex RegexMuitasConsoantes =
+        new Regex(@"[^aeiouáéíóúâêîôûãõàèìòùüç\s'’-]{6,}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
         
-    public static readonly Regex RegexCaracteresValidos = 
+    private static readonly Regex RegexCaracteresValidos =
         new Regex(@"^[\p{L}'’\-\s]+$", RegexOptions.Compiled);
+    private static readonly Regex RegexDigitosInvalidos =
+        new Regex( @"^\d{11}$", RegexOptions.Compiled);
 
     // Retorna TRUE se for nulo, vazio ou espaços
-    public static string ValidateNullOrWhiteSpace(string entity)
+    private static string ValidateNullOrWhiteSpace(string entity)
     {
         if (string.IsNullOrWhiteSpace(entity))
         {
-            throw new ArgumentException("O entity não pode ser nulo, vazio ou conter apenas espaços.", nameof(entity));
+            throw new ArgumentException("Não pode ser nulo, vazio ou conter apenas espaços.", nameof(entity));
         }
-        return entity.Trim();
+        return entity;
     }
 
     // Permite letras, espaços, hífens e apóstrofos
-    public static string ValidarCaracteresValidos(string entity)
+    public static void ValidarCaracteresValidos(string entity)
     {
-        // SE NÃO for nulo ou vazio, valida a Regex
-        if (ValidateNullOrWhiteSpace(entity)) 
+        if (!RegexCaracteresValidos.IsMatch(ValidateNullOrWhiteSpace(entity)))
         {
-            throw new ArgumentException("O entity não pode ser nulo, vazio ou conter apenas espaços.", nameof(entity));
+            throw new ArgumentException("Contém caracteres inválidos.", nameof(entity));
         }
-        return entity.Trim(); // Se for nulo/vazio, é inválido
     }
 
-    // Detecta se qualquer caractere se repete 3 ou mais vezes seguidas (ex: "aaa")
-    public bool ValidarCaracteresRepetidos(string entity)
+    // Detecta se qualquer caractere se repete 4 ou mais vezes seguidas (ex: "aaaaa")
+    public static void ValidarCaracteresRepetidos(string entity)
     {
-        // SE NÃO for nulo ou vazio, valida a Regex
-        if (!ValidateNullOrWhiteSpace(entity))
+        if (RegexCaracteresRepetidos.IsMatch(ValidateNullOrWhiteSpace(entity)))
         {
-            string entityTratado = entity.Trim();
-            return RegexCaracteresRepetidos.IsMatch(entityTratado);
+            throw new ArgumentException("Contém caracteres repetidos.", nameof(entity));
         }
-        return entity.Trim(); 
     }
 
     // Detecta sequências longas de consoantes sem nenhuma vogal por perto (ex: 5 consoantes)
-    public bool ValidarMuitasConsoantes(string entity)
+    public static void ValidarMuitasConsoantes(string entity)
     {
-        // SE NÃO for nulo ou vazio, valida a Regex
-        if (!ValidateNullOrWhiteSpace(entity))
+        if (RegexMuitasConsoantes.IsMatch(ValidateNullOrWhiteSpace(entity)))
         {
-            string entityTratado = entity.Trim();
-            return RegexMuitasConsoantes.IsMatch(entityTratado);
+            throw new ArgumentException("Contém muitas consoantes sem vogal próxima.", nameof(entity));
         }
-        return entity.Trim();
+    }
+        public static void ValidarDigitos(string entity)
+    {
+        
+        if (RegexDigitosInvalidos.IsMatch(ValidateNullOrWhiteSpace(entity)))
+        {
+            throw new ArgumentException("O número deve conter exatamente 11 dígitos. DDD + Número Ex.: 11987654321", nameof(entity));
+        }
     }
 }

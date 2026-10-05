@@ -1,0 +1,28 @@
+@model ParticipanteEditViewModel
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <input type="hidden" asp-for="Id">
+        <label>Novo nome do participante:</label>
+        <input type="text" asp-for="Nome"  maxlength="100" >
+        <span asp-validation-for="Nome"></span>
+        <br>
+        <label>Novo email do participante:</label>
+        <input type="text" asp-for="Email"  maxlength="100" >
+        <span asp-validation-for="Email"></span>
+        <br>
+        <label>Nova data do evento:</label>
+        <input type="tel" asp-for="Telefone" maxlength="50">
+        <span asp-validation-for="Telefone"></span>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

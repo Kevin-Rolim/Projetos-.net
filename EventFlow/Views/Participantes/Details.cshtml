@@ -1,4 +1,4 @@
-@model List<Evento>
+@model Participante
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -7,10 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-        <h1>Eventos</h1>
-    @foreach (Evento evento in Model)
-        {
-            <p>@evento.Titulo</p>
-        }
-    </body>
+    <h1>Participante</h1>
+    <p>@Model.Nome</p>
+    <p>@Model.Email</p>
+    <p>@Model.Telefone</p>
+</body>
 </html>
